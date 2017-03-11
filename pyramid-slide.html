@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+            color: purple;
+            background-color:yellow;
+
+
+            margin: 100px;
+
+        }
+        #pic {
+
+            background-color: yellow;
+            margin:0px 200px 0px 200px;
+            border: 1px solid red;
+
+
+
+
+        }
+        h1 {
+            background-color: salmon;
+
+        }
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            margin:10px 100px 20px 100px;
+            background-color: tan;
+
+
+
+
+
+
+
+
+
+        }
+        #briandhi {
+            background-color: lightseagreen;
+
+
+        }
+        #incl {
+            background-color: white;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+ <div id=incl>
+    <h1>Draw a Pyramid</h1>
+
+
+
+
+
+
+
+
+  <div id=pic>
+   <div id=briandhi>
+
+    Brick symbol:
+    <select id="bricks" name="Brick-Symbol">
+
+        <option value="#">#</option>
+        <option value="@">@</option>
+        <option value="X">X</option>
+        <option value="$">$</option>
+    </select>
+    <span id="slider_value"></span>
+
+    How high?<input type="range" id="height" name = "foo" min = "1" max = "20"  onchange="document.getElementById(slider_value).innerHTML=this.value;"/>20
+
+
+    <br><br>
+   </div>
+
+    <div id="pyramid"></div>
+    <script src="pyramid-slide.js"></script>
+  </div>
+ </div>
+
+
+</body>
+</html>
